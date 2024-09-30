@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fat2Fit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Reset  */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg5.jpg')no-repeat;
+            background-size: cover ;
+            /* background-size: 100%; */
+            margin: 12px;
+            padding: 345px;
+            z-index: 1;
+
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            z-index: 2;
+            text-shadow: 3px 3px rgb(12, 11, 11);
+        }
+
+        .left img {
+            height: 30%;
+            width: 30%;
+            /* filter: invert(100%); */
+
+        }
+
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            border-radius: 25px;
+        }
+
+        .Mid {
+            position: absolute;
+            left: 500px;
+            top: 40px;
+
+        }
+
+        .navbar {
+            list-style: none;
+            display: flex;
+            font-size: 18px;
+            padding: 10px;
+            margin: auto;
+
+        }
+
+        .navbar li {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        .navbar li a {
+            display: flex;
+            padding: 6px 12px;
+            text-decoration: none;
+            /*to remove underline*/
+            color: white;
+            font-family: Verdana, Tahoma, sans-serif;
+            background-color: none;
+
+            border-radius: 15px;
+
+
+        }
+
+        .navbar li a:hover {
+            border: 2px solid black;
+            background-color: rgba(128, 128, 128, 0.485);
+            /* color: gray; */
+
+        }
+
+        /* .navbar li a.active {
+            color: gray;
+            text-decoration: underline;
+        } */
+
+        .btn {
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 6px;
+            margin-top: 34px;
+
+
+
+        }
+
+        .btn:hover {
+            color: red;
+            text-decoration: underline;
+            /* font-size: bold; */
+            border-radius: 10px;
+            cursor: pointer;
+            border: 2px solid black;
+            background-color: rgba(158, 157, 157, 0.575);
+        }
+
+        .container {
+
+            /* position: absolute;
+            /* left: 34px; */
+
+            color: #8152573b;
+            /* top: 270px; */
+            /* border: 2px solid white; */
+            /* padding: 12px; */
+            /* margin: 15px; */
+            /* width: 450px; */
+            */
+        }
+
+        .form-group input {
+            padding: 15px;
+            margin: 7px auto;
+            width: 356px;
+            display: block;
+            text-align: center;
+            color: rgb(8, 8, 8);
+            border: 2px solid black;
+            background-color: rgba(158, 157, 157, 0.575);
+            border-radius: 10px;
+            font-family: Verdana,Tahoma, sans-serif;
+        }
+
+        .form-group {}
+
+        h2 {
+            text-align: center;
+            text-shadow: 4px 4px rgb(80, 76, 76);
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+
+        .container button {
+            display: block;
+            width: 78px;
+            text-align: center;
+            padding: 12px;
+            margin: auto;
+            border-radius: 10px;
+            border: 2px solid black;
+            font-family: Verdana, Tahoma, sans-serif;
+            color: black;
+            border: 2px solid black;
+            background-color: rgba(158, 157, 157, 0.575);
+            border-radius: 10px;
+        }
+
+        :hover.button {
+            text-decoration: underline;
+            color: blue;
+        }
+
+
+        /* footer */
+/* 
+        .footerr {
+            background-color: rgba(0, 0, 0, 0.511);
+            border: 5px solid blue;
+            position: absolute;
+            height: 38%;
+            width: 100%;
+            left: 0%;
+            top: 135%;
+            
+
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="left">
+        <img src="logo/logo2.png" alt="error">
+        <h3 style="margin: 0%;
+        font-family: cursive;
+        color: white;
+         
+         ">&nbsp;&nbsp;&nbsp;&nbsp; F2F</h3>
+    </div>
+
+    <header class=" header">
+        <div class="Mid">
+            <ul class="navbar">
+                <!-- <li><a href="#" class="active">Home</a></li> -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="reg.html" class="btn">Register</a>
+            <a href="cc.html" class="btn">Customer care</a>
+            <a href="eu.html" class="btn">Email Us</a>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h2>Join To Become Fit!</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Contact No.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email Id">
+            </div>
+            <button class="button">Submit</button>
+        </form>
+    </div>
+
+    <!-- <div class="footerr">
+        <h2>Download F2F Mobile App!</h2>
+        <p style="color: aqua;">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+
+    </div> -->
+
+</body>
+
+</html>
